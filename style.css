@@ -90,7 +90,7 @@ body {
 }
 .bloque-texto p:last-of-type {
     font-family: 'Montserrat', sans-serif;
-    font-weight: 800;
+    font-weight: 600;
     font-style: italic;
 }
 
@@ -104,7 +104,7 @@ body {
     font-weight: bold;
     text-align: center;
     color: #d4af37; 
-    margin-top: 20px;
+    margin-top: 18px;
 }
 
 /* --- ANIMACIONES Y TU BOTÓN DE ORO PREMIUM --- */
