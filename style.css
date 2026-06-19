@@ -91,6 +91,7 @@ body {
 
 .bloque-texto p:last-of-type {
     font-family: 'Montserrat', sans-serif;
+    font-weight: 200;
     font-style: italic;
 }
 
