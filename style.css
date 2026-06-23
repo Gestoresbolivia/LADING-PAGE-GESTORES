@@ -167,3 +167,30 @@ body {
     .boton-premium-oro { font-size: 18px; padding: 15px 20px; }
     .alerta-cupos { font-size: 15px; }
 }
+
+.whatsapp-button {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  background-color: #25d366;
+  color: white;
+  padding: 15px 15px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: bold;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  display: flex;
+  align-items: center;
+  z-index: 9999;
+  transition: transform 0.3s;
+}
+
+.whatsapp-button:hover {
+  transform: scale(1.1);
+  background-color: #128c7e;
+}
+
+.whatsapp-button img {
+  width: 20px;
+  margin-right: 8px;
+}
