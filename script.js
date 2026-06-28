@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", function() {
         
         // Antes de la campaña
         if (ahora < fechaInicioCampana) {
-            elementoCupos.innerText = `${cuposIniciales} de ${cuposIniciales} cupos`;
+            elementoCupos.innerText = `${cuposIniciales} de ${cuposIniciales} CUPOS`;
             return;
         }
 
@@ -27,7 +27,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
         // Después del cierre
         if (tiempoTranscurrido >= tiempoTotalCampana) {
-            elementoCupos.innerText = `${cuposMinimos} de ${cuposIniciales} cupos`;
+            elementoCupos.innerText = `${cuposMinimos} de ${cuposIniciales} CUPOS`;
             return;
         }
 
@@ -44,7 +44,7 @@ document.addEventListener("DOMContentLoaded", function() {
         }
 
         // AQUÍ ESTABA EL ERROR: Usamos backticks (`) para que las variables funcionen
-        elementoCupos.innerText = `${cuposActuales} de ${cuposIniciales} cupos`;
+        elementoCupos.innerText = `${cuposActuales} de ${cuposIniciales} CUPOS`;
     }
 
     actualizarCuposGlobales();
