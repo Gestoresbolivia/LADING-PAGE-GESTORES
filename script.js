@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function() {
     
     // CONFIGURACIÓN DE TU CURSO
     const cuposIniciales = 50;
-    const cuposMinimos = 3;
+    const cuposMinimos = 1;
 
     // FECHA EXACTA DE CIERRE (Miércoles 01 de Julio a las 15:30)
     const fechaCierre = new Date(2026, 7, 05, 16, 3, 0).getTime();
