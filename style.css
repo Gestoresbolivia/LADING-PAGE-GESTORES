@@ -192,8 +192,8 @@ body {
 
 /* Agrega esto justo debajo para controlar el tamaño del icono de WhatsApp */
 .whatsapp-button img {
-  width: 35px;
-  height: 35px;
-  margin-right: 15px; /* Espacio opcional entre el icono y el texto */
+  width: 45px;
+  height: 45px;
+  margin-right: 8px; /* Espacio opcional entre el icono y el texto */
 }
 
