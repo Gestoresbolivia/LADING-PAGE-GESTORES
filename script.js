@@ -52,18 +52,3 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 
-/* Estilos para el contador nativo con efecto de caída */
-.flip-box {
-    background: #1a1a1a;
-    color: #f39c12;
-    font-size: 2.5rem;
-    padding: 15px 20px;
-    border-radius: 6px;
-    font-weight: bold;
-    border: 1px solid #333;
-    display: inline-block;
-    min-width: 70px;
-    transition: transform 0.15s ease-in-out, background-color 0.15s;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.3);
-}
-
