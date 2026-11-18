@@ -190,35 +190,3 @@ body {
   background-color: #128c7e;
 }
 
-
-/* Estilos para el contador nativo con efecto de caída */
-.flip-box {
-    background: #1a1a1a;
-    color: #f39c12;
-    font-size: 2.5rem;
-    padding: 15px 20px;
-    border-radius: 6px;
-    font-weight: bold;
-    border: 1px solid #333;
-    display: inline-block;
-    min-width: 70px;
-    transition: transform 0.15s ease-in-out, background-color 0.15s;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.3);
-}
-
-/* Efecto visual de caída/pestaña al cambiar */
-.flip-box.fall {
-    transform: translateY(-4px) scale(0.97);
-    background: #252525;
-}
-
-.time-label {
-    color: #fff;
-    font-size: 0.9rem;
-    margin-top: 8px;
-    font-family: 'Montserrat', sans-serif;
-}
-.whatsapp-button img {
-  width: 25px;
-  margin-right: 10px;
-}
