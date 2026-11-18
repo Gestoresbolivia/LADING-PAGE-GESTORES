@@ -67,32 +67,3 @@ document.addEventListener("DOMContentLoaded", function() {
     box-shadow: 0 4px 6px rgba(0,0,0,0.3);
 }
 
-// --- CONTADOR REGRESIVO NATIVO CON EFECTO DE CAÍDA ---
-// Año, Mes [0-11 donde 10 es Noviembre], Día, Hora, Minuto, Segundo
-const fechaObjetivo = new Date(2026, 10, 19, 19, 30, 0).getTime();
-
-function actualizarContadorNativo() {
-    const ahora = new Date().getTime();
-    const diferencia = fechaObjetivo - ahora;
-
-    if (diferencia <= 0) {
-        document.getElementById("dias").innerText = "00";
-        document.getElementById("horas").innerText = "00";
-        document.getElementById("minutos").innerText = "00";
-        document.getElementById("segundos").innerText = "00";
-        return;
-    }
-
-    const dias = Math.floor(diferencia / (1000 * 60 * 60 * 24));
-    const horas = Math.floor((diferencia % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    const minutos = Math.floor((diferencia % (1000 * 60 * 60)) / (1000 * 60));
-    const segundos = Math.floor((diferencia % (1000 * 60)) / 1000);
-
-    document.getElementById("dias").innerText = String(dias).padStart(2, '0');
-    document.getElementById("horas").innerText = String(horas).padStart(2, '0');
-    document.getElementById("minutos").innerText = String(minutos).padStart(2, '0');
-    document.getElementById("segundos").innerText = String(segundos).padStart(2, '0');
-}
-// Ejecutar cada segundo de forma precisa
-setInterval(actualizarContadorNativo, 1000);
-actualizarContadorNativo();
