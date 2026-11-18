@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const fechaCierre = new Date(2026, 10, 19, 16, 3, 0).getTime();
 
     // FECHA DE INICIO DE LA CAMPAÑA (Viernes 19 de Junio a las 08:00 AM)
-    const fechaInicioCampana = new Date(2026, 10, 18, 10, 3, 5).getTime();
+    const fechaInicioCampana = new Date(2026, 10, 18, 00, 3, 0).getTime();
 
     function actualizarCuposGlobales() {
         if (!elementoCupos) return; // Seguridad por si no encuentra el ID
