@@ -71,8 +71,6 @@ document.addEventListener("DOMContentLoaded", function() {
 // Año, Mes [0-11 donde 10 es Noviembre], Día, Hora, Minuto, Segundo
 const fechaObjetivo = new Date(2026, 10, 19, 19, 30, 0).getTime();
 
-let ultimoSegundo = null;
-
 function actualizarContadorNativo() {
     const ahora = new Date().getTime();
     const diferencia = fechaObjetivo - ahora;
@@ -90,24 +88,11 @@ function actualizarContadorNativo() {
     const minutos = Math.floor((diferencia % (1000 * 60 * 60)) / (1000 * 60));
     const segundos = Math.floor((diferencia % (1000 * 60)) / 1000);
 
-    const strSegundos = String(segundos).padStart(2, '0');
-    const elSegundos = document.getElementById("segundos");
-
-    // Aplicar animación de caída cada vez que cambia el segundo
-    if (ultimoSegundo !== null && ultimoSegundo !== strSegundos) {
-        elSegundos.classList.add("fall");
-        setTimeout(() => {
-            elSegundos.classList.remove("fall");
-        }, 150);
-    }
-    ultimoSegundo = strSegundos;
-
     document.getElementById("dias").innerText = String(dias).padStart(2, '0');
     document.getElementById("horas").innerText = String(horas).padStart(2, '0');
     document.getElementById("minutos").innerText = String(minutos).padStart(2, '0');
-    elSegundos.innerText = strSegundos;
+    document.getElementById("segundos").innerText = String(segundos).padStart(2, '0');
 }
-
 // Ejecutar cada segundo de forma precisa
 setInterval(actualizarContadorNativo, 1000);
 actualizarContadorNativo();
