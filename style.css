@@ -193,7 +193,7 @@ body {
 
 /* Controlamos el icono para que resalte sin engordar la pastilla */
 .whatsapp-button img {
-  width: 28px;
-  height: 28px;
+  width: 35px;
+  height: 35px;
   margin-right: 10px;
 }
